@@ -6,5 +6,11 @@ result = subprocess.run(
     text=True
 )
 
+stats = {}
 
-print(result.stdout)
+for line in result.stdout.strip().splitlines():
+    key, value = line.split("=")
+    stats[key] = int(value)
+
+
+print(stats)
