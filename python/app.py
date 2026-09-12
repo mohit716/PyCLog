@@ -1,10 +1,10 @@
 import subprocess
 
 result = subprocess.run(
-    ["./c/analyzer.exe"],
+    [r"./c/analyzer.exe",r"logs/sample.log"],
     capture_output=True,
     text=True
 )
 
-print("Python received:")
+
 print(result.stdout)
