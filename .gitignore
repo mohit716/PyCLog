@@ -1,0 +1,21 @@
+# C build artifacts
+*.o
+*.obj
+*.exe
+c/analyzer
+c/analyzer.exe
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
